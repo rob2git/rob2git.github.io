@@ -7,7 +7,7 @@
  */
 const SITE = {
   name: "Robert Barreto-Bajana",
-  role: "Project Manager & Nerd & Writer",
+  role: "Project Manager, Techie,  Writer",
   tagline: "Reflecting on the journey and the adventures behind it.",
   email: "agiletent@proton.me",
   location: "Tampa, FL",
