@@ -214,7 +214,7 @@ input:focus-visible {
    HERO (fade-in on load)
    ========================================================= */
 .hero {
-  padding: 5rem 0 4rem;
+  padding: 3rem 0 4rem;
 }
 
 .hero-eyebrow,
