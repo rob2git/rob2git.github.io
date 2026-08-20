@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Jordan Ellis</title>
+<meta name="description" content="Résumé and experience for Jordan Ellis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" data-site="name">Jordan Ellis</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="layout">
+    <div class="layout-margin">
+      <div class="layout-margin-inner">CV — <span data-year></span></div>
+    </div>
+    <div class="layout-main">
+      <p class="eyebrow">Résumé</p>
+      <h1 data-site="name">Jordan Ellis</h1>
+      <p class="hero-sub" data-site="tagline">I design calm software and write about the decisions behind it.</p>
+
+      <p class="cv-download">
+        <button class="btn btn-primary" onclick="window.print()">Print or save as PDF</button>
+      </p>
+
+      <h2>Experience</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-date">2023 — Present</div>
+        <div>
+          <div class="cv-entry-role">Senior Product Designer</div>
+          <div class="cv-entry-org">Northline Software</div>
+          <p class="cv-entry-desc">Lead designer for the team's core scheduling product. Rebuilt the onboarding flow, cutting time-to-first-value by roughly a third, and established the design system now used across four product teams.</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-date">2020 — 2023</div>
+        <div>
+          <div class="cv-entry-role">Product Designer</div>
+          <div class="cv-entry-org">Fielder Co.</div>
+          <p class="cv-entry-desc">Owned design for the mobile app end to end, from research through shipped feature. Partnered closely with two engineers in a small, fast-moving team.</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-date">2018 — 2020</div>
+        <div>
+          <div class="cv-entry-role">UX Designer</div>
+          <div class="cv-entry-org">Grayline Studio</div>
+          <p class="cv-entry-desc">Worked across client engagements spanning healthcare, logistics, and internal tooling. Introduced a lightweight research practice that became studio-wide standard.</p>
+        </div>
+      </div>
+
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-date">2014 — 2018</div>
+        <div>
+          <div class="cv-entry-role">B.A., Communication Design</div>
+          <div class="cv-entry-org">Portland State University</div>
+        </div>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span class="skill-tag">Product strategy</span>
+        <span class="skill-tag">Design systems</span>
+        <span class="skill-tag">Prototyping</span>
+        <span class="skill-tag">User research</span>
+        <span class="skill-tag">HTML &amp; CSS</span>
+        <span class="skill-tag">Writing</span>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="layout">
+    <div class="layout-margin"></div>
+    <div class="layout-main">
+      <div class="footer-content">
+        <span>&copy; <span data-year></span> <span data-site="name">Jordan Ellis</span></span>
+        <div data-site-social></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site-config.js"></script>
+<script src="js/posts-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

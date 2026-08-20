@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robert Barreto-Bajana — Project Manager &amp; Nerd &amp; Writer</title>
-<meta name="description" content="Portfolio and writing from Robert Barreto, a fellow traveler.">
+<title>Blog — Jordan Ellis</title>
+<meta name="description" content="Writing on design, process, and work from Jordan Ellis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <header class="site-header">
   <nav class="nav">
-    <a class="nav-brand" href="index.html" data-site="name">Robert Barreto-Bajana</a>
+    <a class="nav-brand" href="index.html" data-site="name">Jordan Ellis</a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -28,26 +28,22 @@
 <main>
   <div class="layout">
     <div class="layout-margin">
-      <div class="layout-margin-inner" data-site="issueLabel">PORTFOLIO — 2026</div>
+      <div class="layout-margin-inner">ALL POSTS</div>
     </div>
     <div class="layout-main">
-      <section class="hero">
-        <p class="eyebrow hero-eyebrow" data-site="role">Project Manager &amp; Nerd &amp; Writer</p>
-        <h1>Honest thoughts, considered writing.</h1>
-        <p class="hero-sub" data-site="tagline">Reflecting on the journey and the adventures behind it.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="blog.html">Read the blog</a>
-          <a class="btn btn-ghost" href="cv.html">View CV</a>
-        </div>
-      </section>
+      <p class="eyebrow">Writing</p>
+      <h1>Blog</h1>
+      <p class="hero-sub">Short, occasional posts on design, process, and the work of making things.</p>
 
-      <section class="latest">
-        <div class="section-heading">
-          <h2>Latest thoughts</h2>
-          <a href="blog.html">All posts &rarr;</a>
-        </div>
-        <div class="post-grid" data-latest-posts></div>
-      </section>
+      <input
+        class="search-field"
+        type="search"
+        placeholder="Search posts…"
+        aria-label="Search posts"
+        data-post-search
+      >
+
+      <div class="post-grid" data-all-posts></div>
     </div>
   </div>
 </main>
@@ -57,7 +53,7 @@
     <div class="layout-margin"></div>
     <div class="layout-main">
       <div class="footer-content">
-        <span>&copy; <span data-year></span> <span data-site="name">Robert Barreto</span></span>
+        <span>&copy; <span data-year></span> <span data-site="name">Jordan Ellis</span></span>
         <div data-site-social></div>
       </div>
     </div>
