@@ -16,7 +16,7 @@ const SITE = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/robert-barreto-bajana-6796059" },
     { label: "GitHub", href: "https://github.com/rob2git" }
   ],
-  issueLabel: "Welcome"// small margin label used on the homepage
+  issueLabel: "Welcome",// small margin label used on the homepage
 
   // Password for the /admin.html post editor. Change this to something
   // only you know. IMPORTANT: this is a light deterrent, not real security —
