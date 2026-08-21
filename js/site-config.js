@@ -16,7 +16,7 @@ const SITE = {
     { label: "LinkedIn", href: "https://linkedin.com/in/robertbarreto" },
     { label: "GitHub", href: "https://github.com/rob2git" }
   ],
-  issueLabel: "Write & True"// small margin label used on the homepage
+  issueLabel: "Welcome"// small margin label used on the homepage
 };
 
 /**
