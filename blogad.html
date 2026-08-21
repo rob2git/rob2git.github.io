@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — Jordan Ellis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html" data-site="name">Jordan Ellis</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="layout">
+    <div class="layout-margin">
+      <div class="layout-margin-inner">ADMIN</div>
+    </div>
+    <div class="layout-main">
+
+      <!-- Password gate -->
+      <section data-admin-gate class="admin-gate">
+        <p class="eyebrow">Admin</p>
+        <h1>Enter password</h1>
+        <p class="hero-sub">This screen keeps out casual visitors. See the note at the bottom of this page for what it doesn't protect against.</p>
+        <form data-gate-form class="admin-gate-form">
+          <label for="gate-password" class="admin-label">Password</label>
+          <input id="gate-password" type="password" data-gate-input class="search-field admin-gate-input" autocomplete="current-password" required>
+          <p class="admin-notice admin-notice--error" data-gate-error hidden>Incorrect password. Try again.</p>
+          <button type="submit" class="btn btn-primary">Unlock</button>
+        </form>
+        <p class="admin-fineprint">
+          The password is set in <code>js/site-config.js</code>. Because this is a static
+          site with no server, that file is readable by anyone who inspects it in their
+          browser — this gate is a light deterrent, not real security.
+        </p>
+      </section>
+
+      <!-- Editor (hidden until unlocked) -->
+      <section data-admin-panel hidden>
+        <p class="eyebrow">Admin</p>
+        <h1>Manage posts</h1>
+        <p class="hero-sub">
+          Changes save to this browser only. When you're done, download the updated
+          file and replace <code>js/posts-data.js</code> in your project, then
+          re-upload your site — that's what makes changes visible to everyone else.
+        </p>
+
+        <p class="admin-notice" data-admin-notice hidden></p>
+
+        <div class="admin-toolbar">
+          <button class="btn btn-primary" data-export>Download posts-data.js</button>
+          <button class="btn btn-ghost" data-reset>Discard local changes</button>
+        </div>
+
+        <div class="admin-grid">
+          <div class="admin-form-col">
+            <h2 data-form-heading>New post</h2>
+            <form data-post-form class="admin-form">
+              <label class="admin-label" for="field-title">Title</label>
+              <input id="field-title" type="text" class="search-field" data-field-title required>
+
+              <label class="admin-label" for="field-id">URL slug</label>
+              <input id="field-id" type="text" class="search-field" data-field-id placeholder="auto-generated-from-title">
+
+              <label class="admin-label" for="field-date">Date</label>
+              <input id="field-date" type="date" class="search-field" data-field-date required>
+
+              <label class="admin-label" for="field-tags">Tags <span class="admin-label-hint">(comma-separated)</span></label>
+              <input id="field-tags" type="text" class="search-field" data-field-tags placeholder="Design, Process">
+
+              <label class="admin-label" for="field-excerpt">Excerpt</label>
+              <textarea id="field-excerpt" class="search-field admin-textarea" data-field-excerpt rows="2" required></textarea>
+
+              <label class="admin-label" for="field-content">Content <span class="admin-label-hint">(HTML — wrap paragraphs in &lt;p&gt; tags)</span></label>
+              <textarea id="field-content" class="search-field admin-textarea admin-textarea-lg" data-field-content rows="10" required></textarea>
+
+              <div class="admin-form-actions">
+                <button type="submit" class="btn btn-primary">Save post</button>
+                <button type="button" class="btn btn-ghost" data-cancel-edit hidden>Cancel edit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="admin-list-col">
+            <h2>All posts</h2>
+            <div data-admin-list></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="layout">
+    <div class="layout-margin"></div>
+    <div class="layout-main">
+      <div class="footer-content">
+        <span>&copy; <span data-year></span> <span data-site="name">Jordan Ellis</span></span>
+        <div data-site-social></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site-config.js"></script>
+<script src="js/posts-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
