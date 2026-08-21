@@ -117,7 +117,7 @@ input:focus-visible {
   line-height: 1.7;
 }
 
-.layout-main { min-width: 0; padding-bottom: 5rem; }
+.layout-main { min-width: 0; padding-bottom: 5rem; padding-top: 2rem;}
 
 @media (max-width: 800px) {
   .layout {
@@ -223,7 +223,7 @@ input:focus-visible {
 .hero-actions {
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 700ms ease, transform 700ms ease;
+  transition: opacity 1000ms ease, transform 1000ms ease;
 }
 
 .hero--visible .hero-eyebrow { opacity: 1; transform: none; transition-delay: 60ms; }
