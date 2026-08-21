@@ -36,18 +36,19 @@
       <section data-admin-gate class="admin-gate">
         <p class="eyebrow">Admin</p>
         <h1>Enter password</h1>
-        <p class="hero-sub">This screen keeps out casual visitors. See the note at the bottom of this page for what it doesn't protect against.</p>
+        <!--<p class="hero-sub">This screen keeps out casual visitors. See the note at the bottom of this page for what it doesn't protect against.</p>-->
         <form data-gate-form class="admin-gate-form">
           <label for="gate-password" class="admin-label">Password</label>
           <input id="gate-password" type="password" data-gate-input class="search-field admin-gate-input" autocomplete="current-password" required>
           <p class="admin-notice admin-notice--error" data-gate-error hidden>Incorrect password. Try again.</p>
           <button type="submit" class="btn btn-primary">Unlock</button>
         </form>
+        <!--
         <p class="admin-fineprint">
           The password is set in <code>js/site-config.js</code>. Because this is a static
           site with no server, that file is readable by anyone who inspects it in their
           browser — this gate is a light deterrent, not real security.
-        </p>
+        </p> -->
       </section>
 
       <!-- Editor (hidden until unlocked) -->
