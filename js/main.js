@@ -8,6 +8,24 @@
 
 // ---------- helpers ----------
 
+// Posts edited on admin.html are saved to this localStorage key. Every page
+// checks it first so edits preview immediately in the same browser; it falls
+// back to the POSTS array from js/posts-data.js when nothing is saved there.
+const POSTS_STORAGE_KEY = "blog_posts_override";
+
+function getAllPosts() {
+  try {
+    const raw = localStorage.getItem(POSTS_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) return parsed;
+    }
+  } catch (e) {
+    /* fall through to the file-based list */
+  }
+  return POSTS;
+}
+
 function formatDate(isoString) {
   const d = new Date(isoString + "T00:00:00");
   return d.toLocaleDateString("en-US", {
@@ -18,7 +36,7 @@ function formatDate(isoString) {
 }
 
 function sortedPosts() {
-  return [...POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
+  return [...getAllPosts()].sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function postCardHTML(post) {
@@ -102,7 +120,7 @@ function initPostPage() {
 
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
-  const post = POSTS.find((p) => p.id === id);
+  const post = getAllPosts().find((p) => p.id === id);
 
   if (!post) {
     container.innerHTML = `
