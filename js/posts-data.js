@@ -14,9 +14,9 @@ const POSTS = [
     tags: ["Beginnings"],
     excerpt: "The time it takes to make decisions and then act on them is as important as acting on the decision itself.",
     content: `
-      50 years, that's just how long it has taken to finally start this.  Of course, I wasn't thinking about this the moment I opened my eyes to the world, but it's as good a starting baseline as any other to use to check how long we take to make decisions.
+      <p>50 years, that's just how long it has taken to finally start this.  Of course, I wasn't thinking about this the moment I opened my eyes to the world, but it's as good a starting baseline as any other to use to check how long we take to make decisions.</p>
       
-      <p>Do you find the same happening with your business decisions?  Or perhaps it's the opposite where decisions are made too quick.
+      <p>Do you find the same happening with your business decisions?  Or perhaps it's the opposite where decisions are made too quick.</p>
     `
   },
   {
