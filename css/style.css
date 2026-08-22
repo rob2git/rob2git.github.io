@@ -284,6 +284,13 @@ input:focus-visible {
 .section-heading h2 { margin: 0; }
 .section-heading a { font-family: var(--font-mono); font-size: 0.82rem; white-space: nowrap; }
 
+.section-sub {
+  font-size: 1.15rem;
+  color: var(--color-ink-soft);
+  max-width: 46ch;
+  margin-bottom: 2rem;
+}
+
 /* =========================================================
    POST CARDS
    ========================================================= */
