@@ -13,8 +13,8 @@ const SITE = {
   location: "Tampa, FL",
   social: [
     { label: "Email", href: "mailto:agiletent@proton.me" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/robert-barreto-bajana-6796059" },
-    { label: "GitHub", href: "https://github.com/rob2git" }
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/robert-barreto-bajana-6796059" }//,
+    //{ label: "GitHub", href: "https://github.com" }
   ],
   issueLabel: "Welcome",// small margin label used on the homepage
 
