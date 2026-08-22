@@ -18,7 +18,7 @@ const POSTS = [
       
       <p>Do you find the same happening with your business decisions?  Or perhaps it's the opposite where decisions are made too quick.</p>
     `
-  },
+  }/**,
   {
     id: "designing-with-restraint",
     title: "Designing with restraint",
@@ -87,5 +87,5 @@ const POSTS = [
             <p>It's a small trade. I'd make it again.</p>
           
     `
-  }
+  } */
 ];
